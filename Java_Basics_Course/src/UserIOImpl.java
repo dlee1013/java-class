@@ -14,6 +14,7 @@ public class UserIOImpl implements UserIO{
         System.out.println(prompt);
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
+        scan.close();
         return input;
     }
 
@@ -23,6 +24,7 @@ public class UserIOImpl implements UserIO{
         System.out.println(prompt);
         Scanner scan = new Scanner(System.in);
         int input = scan.nextInt();
+        scan.close();
         return input;
     }
 
@@ -59,7 +61,7 @@ public class UserIOImpl implements UserIO{
         System.out.println(prompt);
         Scanner scan = new Scanner(System.in);
         double input = scan.nextDouble();
-
+        scan.close();
         return input;
     }
 
@@ -96,7 +98,7 @@ public class UserIOImpl implements UserIO{
         System.out.println(prompt);
         Scanner scan = new Scanner(System.in);
         float input = scan.nextFloat();
-
+        scan.close();
         return input;
     }
 
@@ -133,7 +135,7 @@ public class UserIOImpl implements UserIO{
         System.out.println(prompt);
         Scanner scan = new Scanner(System.in);
         long input = scan.nextLong();
-
+        scan.close();
         return input;
     }
 
